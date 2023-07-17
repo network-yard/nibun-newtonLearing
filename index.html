@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="all">
+        <div class="ui">
+            <p class="title">2分法・ニュートン法学習</p>
+            <div class="select">
+                <input type="radio" name="selector" valeu="nib" class="nibun" checked>2分法
+                <input type="radio" name="selector" valeu="new" class="newton">ニュートン
+            </div>
+            <div class="syoki">
+                <div class="a">
+                    <p>初期値a</p>
+                    <input type="text" name="a" required>
+                </div>
+                <div class ="b">
+                    <p>初期値b</p>
+                    <input type="text" name="b" required>
+                </div>
+            </div>
+            <p class="text">※ニュートン法は初期値aのみ有効</p>
+            <div class="func">
+                <div class="fu">
+                    <p width="50">y=</p>
+                    <input type="text" name="x3" required>
+                    <p>x<sup>3</sup>+</p>
+                    <input type="text" name="x2" required>
+                    <p>x<sup>2</sup>+</p>
+                </div>
+                <div class="fd">
+                    <input type="text" name="x1" required>
+                    <p>x +</p>
+                    <input type="text" name="x0" required>
+                </div>
+            </div>
+
+
+            <button class="button"  type="button">表示</p>
+        </div>
+        <div class="resultAll">
+            <div class="result1">
+                <cancvas class="graph"></cancvas>
+            </div>
+            <br>
+            <div class="result2">
+                <cancvas class="number">
+                    算出された根:
+                    <br>
+                    計算回数:
+                </cancvas>
+            </div>
+        </div>
+    </body>
+</html>
